@@ -13,7 +13,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -O3 -march=native")
 # Módulo de CMake para la gestión automatizada de dependencias externas
 include(FetchContent)
 
-# 1. Descarga y configuración de GLFW (Gestión de ventanas y contextos)
+# Descarga y configuración de GLFW (Gestión de ventanas y contextos)
 FetchContent_Declare(
         glfw
         GIT_REPOSITORY https://github.com/glfw/glfw.git
@@ -25,7 +25,7 @@ set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(glfw)
 
-# 2. Descarga de GLM (Librería matemática optimizada para gráficos)
+# Descarga de GLM (Librería matemática optimizada para gráficos)
 FetchContent_Declare(
         glm
         GIT_REPOSITORY https://github.com/g-truc/glm.git
@@ -54,7 +54,7 @@ target_include_directories(${PROJECT_NAME} PRIVATE
         ${glm_SOURCE_DIR}
 )
 
-# Vinculación (Linking) de las librerías estáticas y dinámicas al binario final
+# Linkear las librerías estáticas y dinámicas al binario final
 target_link_libraries(${PROJECT_NAME} PRIVATE
         glfw
         glm

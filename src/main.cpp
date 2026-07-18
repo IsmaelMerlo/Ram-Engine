@@ -1,55 +1,37 @@
-#include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include <iostream>
 
-// Callback para redimensionar la ventana dinámicamente
-void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
-    glViewport(0, 0, width, height);
-}
+int main(void)
+{
+    GLFWwindow* window;
 
-// Salir con escape
-void processInput(GLFWwindow *window) {
-    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-        glfwSetWindowShouldClose(window, true);
-}
+    /* Initialize the library */
+    if (!glfwInit())
+        return -1;
 
-int main() {
-    glfwInit();
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-
-    // Crear la ventana
-    GLFWwindow* window = glfwCreateWindow(1280, 720, "Ram Engine", NULL, NULL);
-    if (window == NULL) {
-        std::cout << "Fallo al crear la ventana GLFW" << std::endl;
+    /* Create a windowed mode window and its OpenGL context */
+    window = glfwCreateWindow(1280, 720, "Ram Engine", NULL, NULL);
+    if (!window)
+    {
         glfwTerminate();
         return -1;
     }
+
+    /* Make the window's context current */
     glfwMakeContextCurrent(window);
-    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
-    // Inicializar GLAD antes de llamar a cualquier función de OpenGL
-    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
-        std::cout << "Fallo al inicializar GLAD" << std::endl;
-        return -1;
-    }
-
-    // El Render Loop principal
-    while (!glfwWindowShouldClose(window)) {
-        // Input
-        processInput(window);
-
-        // Render (Limpiar la pantalla con un color oscuro)
-        glClearColor(0.05f, 0.05f, 0.05f, 1.0f);
+    /* Loop until the user closes the window */
+    while (!glfwWindowShouldClose(window))
+    {
+        /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
 
-        // Intercambiar buffers y procesar eventos
+        /* Swap front and back buffers */
         glfwSwapBuffers(window);
+
+        /* Poll for and process events */
         glfwPollEvents();
     }
 
-    // Limpiar memoria al salir
     glfwTerminate();
     return 0;
 }
