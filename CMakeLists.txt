@@ -42,6 +42,8 @@ set(SOURCES
         src/glad.c
         src/Engine.cpp
         src/Renderer.cpp
+        include/Engine.h
+        include/Renderer.h
 )
 
 # Declaración del ejecutable principal del proyecto
