@@ -44,6 +44,8 @@ set(SOURCES
         src/Renderer.cpp
         include/Engine.h
         include/Renderer.h
+        src/Editor.cpp
+        include/Editor.h
 )
 
 # Declaración del ejecutable principal del proyecto
