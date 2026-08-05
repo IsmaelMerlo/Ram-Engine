@@ -7,5 +7,3 @@ The engine architecture is composed of these files:
 - Engine.cpp/Engine.h
 - Renderer.cpp/Renderer.h
 - Editor.cpp/Editor.h
-
-C++17 and OpenGL 4.6 is required
