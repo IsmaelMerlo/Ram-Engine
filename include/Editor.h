@@ -1,4 +1,2 @@
-#ifndef RAM_ENGINE_EDITOR_H
-#define RAM_ENGINE_EDITOR_H
+#pragma once
 
-#endif //RAM_ENGINE_EDITOR_H

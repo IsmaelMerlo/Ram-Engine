@@ -1,4 +1,12 @@
-#ifndef RAM_ENGINE_ENGINE_H
-#define RAM_ENGINE_ENGINE_H
+#pragma once
 
-#endif //RAM_ENGINE_ENGINE_H
+class Engine {
+
+public:
+    void init();
+    void run();
+    void cleanup();
+
+private:
+    bool isRunning = false;
+};

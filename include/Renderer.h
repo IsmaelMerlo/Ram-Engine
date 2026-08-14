@@ -1,4 +1,2 @@
-#ifndef RAM_ENGINE_RENDERER_H
-#define RAM_ENGINE_RENDERER_H
+#pragma once
 
-#endif //RAM_ENGINE_RENDERER_H

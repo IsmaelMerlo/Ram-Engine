@@ -1,2 +1,2 @@
-#include "../include/Editor.h"
+#include "Editor.h"
 
