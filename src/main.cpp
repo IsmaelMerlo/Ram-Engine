@@ -1,11 +1,30 @@
 #include <iostream>
+#include <string>
 
-int main()
-{
-    std::cout << 5;       // print the literal number `5`
-    std::cout << -6.7;    // print the literal number `-6.7`
-    std::cout << 'H';     // print the literal character `H`
-    std::cout << "Hello"; // print the literal text `Hello`
+// Player class with caracteristics
+class Player {
+
+    public:
+    std::string name;
+    int health = 100;
+
+    void takeDamage(int amount) {
+        health -= amount;
+        if (health <= 0) {
+            std::cout << name << "Ha caído en batalla... \n";
+        }
+        else {
+            std::cout << name << " tiene " << health << " HP restante. \n";
+        }
+    }
+};
+
+// Principal function
+int main() {
+
+    Player hero;
+    hero.name = "Aragorn";
+    hero.takeDamage(40);
 
     return 0;
 }
