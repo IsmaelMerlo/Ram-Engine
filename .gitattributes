@@ -1,0 +1,6 @@
+# Esto hace que Github vea el código C de GLAD como código de terceros
+# para que asi no opaque el código C++ que es el lenguaje principal del proyecto
+# y así C++ aparezca en github como lenguaje mayoritario.
+src/glad.c linguist-vendored
+include/glad/* linguist-vendored
+include/KHR/* linguist-vendored
