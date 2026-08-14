@@ -9,7 +9,7 @@ bool Engine::init() {
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    m_window = glfwCreateWindow(1024, 768, "Ram Engine v1.0.0 - Atractor Caótico de Aizawa - OpenGL 4.6", nullptr, nullptr);
+    m_window = glfwCreateWindow(1024, 768, "Ram Engine v1.0.0 - Atractor de Aizawa - OpenGL 4.6", nullptr, nullptr);
     if (!m_window) {
         glfwTerminate();
         return false;
