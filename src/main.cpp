@@ -1,9 +1,12 @@
-#include <iostream>
+#include "Engine.h"
 
-// Principal function
 int main() {
+    Engine engine;
 
-    std::cout << "Hola papuh!" << std::endl;
+    if (engine.init()) {
+        engine.run();
+    }
 
+    engine.cleanup();
     return 0;
 }
