@@ -82,7 +82,7 @@ Ram_Engine/
 ### Build Instructions
 ```bash
 # Clone the repository
-git clone [https://github.com/tu-usuario/Ram_Engine.git](https://github.com/tu-usuario/Ram_Engine.git)
+git clone [https://github.com/IsmaelMerlo/Ram_Engine.git](https://github.com/IsmaelMerlo/Ram_Engine.git)
 cd Ram_Engine
 
 # Generate build files via CMake
