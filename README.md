@@ -82,8 +82,8 @@ Ram_Engine/
 ### Build Instructions
 ```bash
 # Clone the repository
-git clone [https://github.com/IsmaelMerlo/Ram_Engine.git](https://github.com/IsmaelMerlo/Ram_Engine.git)
-cd Ram_Engine
+git clone [https://github.com/IsmaelMerlo/Ram-Engine.git](https://github.com/IsmaelMerlo/Ram-Engine.git)
+cd Ram-Engine
 
 # Generate build files via CMake
 cmake -B build -DCMAKE_BUILD_TYPE=Release
@@ -92,7 +92,7 @@ cmake -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build --config Release
 
 # Run the Engine
-./build/Ram_Engine
+./build/Ram-Engine
 ```
 
 ---
