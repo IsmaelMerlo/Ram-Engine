@@ -2,6 +2,10 @@
 
 A high-performance, GPU-driven 3D graphics engine written in **modern C++17** and **OpenGL 4.6 Core Profile**. 
 
+https://github.com/user-attachments/assets/6ade2bb5-cad2-4564-a132-0c29dc7578a1
+
+
+
 **Ram Engine** is designed as a zero-overhead graphics laboratory focused on parallel compute pipelines, modern state management via Direct State Access (DSA), and real-time mathematical field simulations.
 
 ---
@@ -78,8 +82,8 @@ Ram_Engine/
 ### Build Instructions
 ```bash
 # Clone the repository
-git clone [https://github.com/tu-usuario/Ram_Engine.git](https://github.com/tu-usuario/Ram_Engine.git)
-cd Ram_Engine
+git clone [https://github.com/IsmaelMerlo/Ram-Engine.git](https://github.com/IsmaelMerlo/Ram-Engine.git)
+cd Ram-Engine
 
 # Generate build files via CMake
 cmake -B build -DCMAKE_BUILD_TYPE=Release
@@ -88,7 +92,7 @@ cmake -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build --config Release
 
 # Run the Engine
-./build/Ram_Engine
+./build/Ram-Engine
 ```
 
 ---
